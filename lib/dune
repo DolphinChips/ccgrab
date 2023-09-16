@@ -1,0 +1,12 @@
+(library
+ (name ccgrab)
+ (libraries
+  cohttp-lwt-unix
+  uri
+  lambdasoup
+  core
+  core_unix.time_unix
+  zip)
+ (modules ccgrab epub)
+ (preprocess
+  (pps lwt_ppx)))

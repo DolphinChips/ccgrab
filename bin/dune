@@ -1,0 +1,4 @@
+(executable
+ (public_name ccgrab)
+ (name main)
+ (libraries cmdliner ccgrab))
