@@ -5,15 +5,24 @@
 (generate_opam_files true)
 
 (source
- (sourcehut dolphinchips/ccgrab))
+ (github dolphinchips/ccgrab))
 
 (authors "DolphinChips")
 
 (maintainers "DolphinChips")
 
-(license LICENSE)
-
-; (documentation https://no)
+(license MIT)
 
 (package
- (name ccgrab))
+ (name ccgrab)
+ (synopsis "Download translations from cclawtranslations.home.blog as ePUB files")
+ (description "Download translations from cclawtranslations.home.blog as ePUB files")
+ (depends
+   (cmdliner (= 1.2.0))
+   (cohttp-lwt-unix (= 5.3.0))
+   (uri (= 4.4.0))
+   (lambdasoup (= 1.0.0))
+   (core (= v0.16.2))
+   (core_unix (= v0.16.0))
+   (camlzip (= 1.11))
+   (lwt_ppx (= 2.1.0))))
